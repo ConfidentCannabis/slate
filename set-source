@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm -rf source
+ln -s $1 source

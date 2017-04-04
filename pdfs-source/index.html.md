@@ -1,10 +1,9 @@
 ---
-title: API Reference
+title: PDF Editor Reference
 
 language_tabs:
-  - shell
-  - ruby
-  - python
+  - html
+  - scss
   - javascript
 
 toc_footers:
@@ -19,11 +18,23 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+The PDF Editor is meant to solve several pain points:
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+- Being able to create templates for PDF reports quickly
+- Be able to be customizable for client needs, and even more, to be quickly customizable
 
-This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+This guide aims to provide documentation for:
+
+- Installation of the editor
+- Editor Usage
+- PDF Creation (local)
+- Errors
+
+If you find any issues with the documentation provided, please contact jared@confidentcannabis.com
+
+#Installation
+
+
 
 # Authentication
 
@@ -69,24 +80,17 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 ## Get All Kittens
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+```html
+<Test>
+</Black>
 ```
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+```scss
+test {
+	thing: blue;
+}
 ```
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
 
 ```javascript
 const kittn = require('kittn');
